@@ -2020,17 +2020,21 @@ Reverse a string entered by the user (e.g., “hello” → “olleh”) */
 
 // sum of even & odd position digits 
 
-let n = 12345;
-let pos = 1, evenSum = 0 , oddSum = 0;
+// let n = 12345;
+// let pos = 1, evenSum = 0 , oddSum = 0;
 
-for( ; n > 0; n = Math.floor( n / 10)){
-     let d = n % 10;
+// for( ; n > 0; n = Math.floor( n / 10)){
+//      let d = n % 10;
 
-     if(pos % 2 === 0) evenSum += d;
-     else oddSum += d;
+//      if(pos % 2 === 0) evenSum += d;
+//      else oddSum += d;
 
-     pos ++;
-}
+//      pos ++;
+// }
 
-console.log("odd positive sum : " ,oddSum);
-console.log("even positive sum : " , evenSum);
+// console.log("odd positive sum : " ,oddSum);
+// console.log("even positive sum : " , evenSum);
+
+let n = Number(prompt("enter the number to its square "));
+
+console.log(" square is : " , n*n);
