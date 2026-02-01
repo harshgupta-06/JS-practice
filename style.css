@@ -1,0 +1,28 @@
+/* *{
+    color: white;
+}
+
+#navbar {
+     height: 60px;
+     background-color: #0f1111;
+}
+
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    color: #f08804;
+    font-size : 25px;
+}
+
+a{
+    margin-right : 200px;
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    padding: 50px;
+}
