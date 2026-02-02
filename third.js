@@ -403,11 +403,79 @@
 
 // console.log(rev);
 
-let str = "hello   world";
-let emtySpaces = 0;
+// let str = "hello   world";
+// let emtySpaces = 0;
   
 
+// for( let ch of str ){
+//   if( ch === " ") emtySpaces++;
+// }
+//   console.log(emtySpaces);
+
+// let str = " educationaa";
+// let count = 0;
+
+// for ( let ch of str ){
+//   if ("aeiouAEIOU".includes(ch)){
+//     count++;
+//   }
+// }
+
+// console.log(count);
+
+
+// let str = "hellovvv";
+// // let count = 0;
+
+// for( let ch of str){
+//   if(
+//     (( ch >= 'a' && ch <= 'z') ||( ch >= 'A' && ch <= 'Z')) && !"aeiou" .includes(ch))
+//     {
+//     console.log( " ch = " , ch);
+// }
+// }
+
+
+// let str = " Harsh GUpta ";
+// let reversed = " ";
+
+// for( let i = str.length-1; i > 0; i--){
+//   reversed += str[i];
+// }
+
+
+// console.log( " reversed string = " ,  reversed);
+
+// let str = " java script";
+// let count = 0;
+
+// for( let ch of str){
+//   count ++;
+// }
+
+// console.log(" total characters are = " , count );
+
+// checking whether the string is palindrome or not
+
+// let str = "madam";
+// let rev = "";
+
+// for ( let i = str.length-1; i >= 0; i--){
+//   rev += str[i];
+// }
+
+// console.log( str === rev ? "palimdrome" : "not palimdrome");
+
+
+let str = "banana";
+let target = "a";
+let count = 0;
+
+
 for( let ch of str ){
-  if( ch === " ") emtySpaces++;
+  if( ch === target ){
+    count ++;
+  }
 }
-  console.log(emtySpaces);
+
+console.log(" Frequency of a is = " , count);
