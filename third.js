@@ -346,15 +346,68 @@
 
 // count digits in a number 
 
-let num = 456789;
-let count = 0;
+// let num = 456789;
+// let count = 0;
 
-for( ; num > 0; num = Math.floor(num/10)){
-   let d = num % 10;
-   count++; 
+// for( ; num > 0; num = Math.floor(num/10)){
+//    let d = num % 10;
+//    count++; 
+// }
+
+// console.log(" count = " , count);
+
+
+// questions based on strings 
+
+
+// let str = "hello"
+
+// for( let i = 0; i < str.length; i++){
+//    console.log(str[i]);
+// }
+
+// let str = "educationaa";
+// let count = 0;
+
+// for ( let ch of str ){
+//    if( " aeiou AEIOU" .includes(ch)){
+//       count++;
+//    }
+// }
+
+// console.log(count);
+
+
+// let str = "helloKKK AAAA";
+// let count = 0;
+
+// for( let ch of str ){
+//    if (
+//   ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) &&
+//   !"aeiouAEIOU".includes(ch)
+// )
+// {
+//       count++;
+//    }
+// }
+
+// console.log(count);
+
+
+// let str = "hello";
+// let rev = "";
+
+// for( let i = str.length-1; i >= 0; i--){
+//    rev += str[i];
+// }
+
+// console.log(rev);
+
+let str = "hello   world";
+let emtySpaces = 0;
+  
+
+for( let ch of str ){
+  if( ch === " ") emtySpaces++;
 }
-
-console.log(" count = " , count);
-
-
-// here we will start more questions 
+  console.log(emtySpaces);
