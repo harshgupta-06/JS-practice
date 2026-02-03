@@ -467,15 +467,81 @@
 // console.log( str === rev ? "palimdrome" : "not palimdrome");
 
 
-let str = "banana";
-let target = "a";
-let count = 0;
+// let str = "banana";
+// let target = "a";
+// let count = 0;
 
 
-for( let ch of str ){
-  if( ch === target ){
-    count ++;
-  }
+// for( let ch of str ){
+//   if( ch === target ){
+//     count ++;
+//   }
+// }
+
+// console.log("Frequency of a is = " ,count);
+
+
+// let str  = "education";
+// let count = 0;
+
+// for( let i = 0; i < str.length; i++){
+//     if("aeiouAEIOU".includes(str[i])) {
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+
+// let str = "hello";
+// let rev = " ";
+
+// for( let i = str.length-1; i >= 0; i--){
+//     rev += str[i];
+// }
+
+// console.log(rev);
+
+// let str = "madam";
+// let rev = "";
+
+// for( let i = str.length - 1; i >= 0; i--){
+//     rev += str[i];
+// }
+
+// console.log( str === rev ? "palimdrome":"not Palimdrome");
+
+
+// let str = "HelloWorld";
+// let isAlpha = true;
+
+//  for(let ch of str){
+//     if(!(( ch >= 'a' && ch <= 'z') || ( ch >= 'A' && ch <= 'Z'))) {
+//         isAlpha = false;
+//         break;
+//     }
+//  }
+
+//  console.log(isAlpha);
+
+// count frequwency of a number 
+
+// let str = "banana";
+// let freq = {};
+
+// for( let ch of str){
+//     freq[ch] = ( freq[ch] || 0) + 1;
+
+// }
+
+// console.log(freq);
+
+
+let str = "madam";
+let rev = "";
+
+for( let i = str.length-1; i >= 0; i--){
+    rev += str[i];
 }
 
-console.log(" Frequency of a is = " , count);
+console.log( str === rev ? "palimdrome" : "not Palimdrome");
