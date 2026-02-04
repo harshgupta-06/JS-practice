@@ -537,11 +537,90 @@
 // console.log(freq);
 
 
-let str = "madam";
-let rev = "";
+// let str = "madam";
+// let rev = "";
 
-for( let i = str.length-1; i >= 0; i--){
-    rev += str[i];
+// for( let i = str.length-1; i >= 0; i--){
+//     rev += str[i];
+// }
+
+// console.log( str === rev ? "palimdrome" : "not Palimdrome");
+
+
+// function countVowels(str) {
+//    let count = 0;
+//    for( let ch of str ){
+//     if("aeiouAEIOU" .includes(ch)){
+//         count++;
+//     }
+//    }
+
+//    console.log( count);
+// }
+
+
+// let nums = [ 2,3,4,5,6];
+
+// nums.forEach(( num) => {
+//     console.log(num * num );
+// })
+
+
+// let nums = [67,52,39];
+
+// let newArr = nums.map((val) => {
+//     return val * val;
+// });
+
+// console.log(newArr);
+
+// let arr = [ 1,2,3,4,5,6,7];
+
+//  let newArr = arr.filter((val) =>{
+//     return val > 3 ;
+// });
+
+// console.log(newArr);
+
+// let arr = [5,6,2,1,3];
+// const output = arr.reduce(( prev , curr) => {
+//     return prev > curr ? prev : curr;
+// });
+
+// console.log(output);
+
+
+// let marks = [ 99,88,95,68,96,78];
+
+// let toppers = marks.filter((val) => {
+//     return val > 90;
+// });
+
+// console.log( toppers);
+
+let n = prompt(" enter a number : ");
+
+let arr = [];
+
+for( let i = 1; i<= n; i++){
+    arr[i-1] = i;
 }
 
-console.log( str === rev ? "palimdrome" : "not Palimdrome");
+console.log(arr);
+
+ let sum = arr.reduce((prev,curr) => {
+    return prev+curr;
+
+    
+});
+
+console.log( " Sum = ",sum);
+
+
+let mul = arr.reduce((prev,curr) => {
+    return prev*curr;
+
+    
+});
+
+console.log( " Factorial = ",mul);
