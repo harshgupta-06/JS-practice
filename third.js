@@ -598,29 +598,119 @@
 
 // console.log( toppers);
 
-let n = prompt(" enter a number : ");
+// let n = prompt(" enter a number : ");
 
-let arr = [];
+// let arr = [];
 
-for( let i = 1; i<= n; i++){
-    arr[i-1] = i;
+// for( let i = 1; i<= n; i++){
+//     arr[i-1] = i;
+// }
+
+// console.log(arr);
+
+//  let sum = arr.reduce((prev,curr) => {
+//     return prev+curr;
+
+    
+// });
+
+// console.log( " Sum = ",sum);
+
+
+// let mul = arr.reduce((prev,curr) => {
+//     return prev*curr;
+
+    
+// });
+
+// console.log( " Factorial = ",mul);
+
+
+// questions based on functions 
+
+// function sum ( a, b){
+//     return a + b;
+// }
+
+
+// function isEven(num){
+//     return num % 2 === 0 ? "even" : "odd" ;
+// }
+
+// const square = n => n*n;
+
+// function lengthOfString(str) {
+//     return str.length;
+// }
+
+// let  result = lengthOfString("harsh gupta");
+// console.log(result);
+
+// Reverse a string 
+
+// function reverseString(str){
+//     let rev = "";
+
+//     for( let i = str.length-1; i >= 0; i--){
+//         rev += str[i];
+//     }
+
+//     return rev;
+
+    
+// }
+
+// let result = reverseString("harshgupta");
+// console.log(result);
+
+
+// function isPalindrome(str){
+//      let rev = "";
+
+
+//      for( let i = str.length-1; i >= 0; i--){
+//         rev += str[i];
+//      }
+
+//      if( str === rev){
+//         return true;
+//      } else {
+//         return false;
+//      }
+// }
+
+// console.log(isPalindrome("madam"));  // true
+// console.log(isPalindrome("hello"));  // false
+
+
+// count vowels in a string 
+
+// function countVowels (str) {
+
+//     let count = 0;
+
+//     for( let ch of str){
+//         if("aeiouAEIOU" .includes(ch)){
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// let result = countVowels("education");
+// console.log(result);
+
+
+function findMax(arr){
+    let max = arr[0];
+    for( let n of arr ){
+        if( n > max){
+            max = n;
+        }
+    }
+
+    return max;
 }
 
-console.log(arr);
-
- let sum = arr.reduce((prev,curr) => {
-    return prev+curr;
-
-    
-});
-
-console.log( " Sum = ",sum);
-
-
-let mul = arr.reduce((prev,curr) => {
-    return prev*curr;
-
-    
-});
-
-console.log( " Factorial = ",mul);
+let result = findMax([ 55,8,99]);
+console.log(result);
