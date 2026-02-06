@@ -701,16 +701,16 @@
 // console.log(result);
 
 
-function findMax(arr){
-    let max = arr[0];
-    for( let n of arr ){
-        if( n > max){
-            max = n;
-        }
-    }
+// function findMax(arr){
+//     let max = arr[0];
+//     for( let n of arr ){
+//         if( n > max){
+//             max = n;
+//         }
+//     }
 
-    return max;
-}
+//     return max;
+// }
 
-let result = findMax([ 55,8,99]);
-console.log(result);
+// let result = findMax([ 55,8,99]);
+// console.log(result);
