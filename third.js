@@ -714,3 +714,93 @@
 
 // let result = findMax([ 55,8,99]);
 // console.log(result);
+
+
+// function sayHello() {
+//     console.log(" Hello Java Script");
+// }
+
+// sayHello();
+
+
+// function square ( a , b ) {
+//     return a * b ;
+// }
+
+
+// console.log(square(5 , 4));
+
+// function checkEvenOdd(num){
+//     if( num % 2 === 0){
+//         return "even";
+//     } else {
+//         return "odd";
+//     }
+// }
+
+// console.log(checkEvenOdd(7));
+
+// function greet (name) {
+//     console.log(" Hello " + name  + " Gupta ");
+// }
+
+// greet ("Riya");
+
+// function findMax ( a, b ) {
+//     if( a > b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// console.log(findMax(8,3));
+
+// function countVowels (str) {
+
+//     let count = 0;
+
+//     for( let ch of str ){
+//         if("aeiouAEIOU" .includes(ch)){
+//         count++;
+//     }
+
+//     }
+//      return count;
+// }
+
+
+// console.log(countVowels("education"));
+
+// function reverseString (str) {
+//     rev = "";
+
+//     for ( let i = str.length-1; i >= 0; i--){
+//         rev += str[i];
+//     }
+
+//     return rev;
+// }
+
+// console.log(reverseString("hello"));
+
+
+// function sumArray (arr) {
+//   let sum  = 0;
+
+//   for( let num of arr ){
+//     sum += num;
+//   }
+
+//   return sum;
+// }
+
+// console.log(sumArray([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]));
+
+
+const add = ( a, b ) => {
+    return a + b; 
+};
+
+
+console.log(add(5,6));
