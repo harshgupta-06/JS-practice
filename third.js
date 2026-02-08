@@ -1027,12 +1027,24 @@
 
 //  console.log(result);
 
-let num = 1023;
-let temp = num;
-let duck = false;
+// let num = 1023;
+// let temp = num;
+// let duck = false;
 
-for( ; temp > 0; temp = Math.floor(temp/10) ){
-        if(temp % 10 === 0) duck = true;
-    }
+// for( ; temp > 0; temp = Math.floor(temp/10) ){
+//         if(temp % 10 === 0) duck = true;
+//     }
 
-    console.log( duck ? "Duck number" : "not a duck number");
+//     console.log( duck ? "Duck number" : "not a duck number");
+
+
+//  printing first and last digit 
+
+let num = 45678930;
+
+let last = num % 10;
+let first = num;
+
+for( ; first >= 10; first = Math.floor(first/10));
+
+console.log(first , last );
