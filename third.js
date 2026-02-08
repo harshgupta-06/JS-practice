@@ -798,9 +798,241 @@
 // console.log(sumArray([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]));
 
 
-const add = ( a, b ) => {
-    return a + b; 
-};
+// const add = ( a, b ) => {
+//     return a + b; 
+// };
 
 
-console.log(add(5,6));
+// console.log(add(5,6));
+
+// print each character of str 
+
+// let str = "hello world ";
+
+// for ( let i = 0; i < str.length; i++){
+//     console.log(str[i]);
+// }
+
+
+// let sum = 0;
+// for( let i = 0; i <= 10; i++) {
+//     sum += i;
+// }
+
+// console.log(" sum = " , sum );
+
+
+// count vowels in a str
+
+// let str = " HarshGupta"
+// let count = 0;
+
+// for( let i = 0; i < str.length; i++){
+//     if("aeiouAEIOU" .includes(str[i])){
+//         count++;
+//     }
+// }
+
+
+// console.log(" vowels in the str are = " , count);
+
+// reverse  a string 
+
+// let str = "hello";
+
+// let rev = "";
+
+// for ( let i = str.length - 1; i >= 0; i--){
+
+//     rev += str[i];
+// }
+
+// console.log(rev);
+
+
+// let arr = [6,88,7,63];
+
+// let max = arr[0];
+
+// for( let i = 1; i < arr.length; i++){
+//     if ( arr[i] > max){
+//         max = arr[i];
+//     }
+// }
+
+// console.log(" Maximum number in the array is = " , max);
+
+
+// Print multiplication of 5
+
+
+// for( let i = 1; i <= 10; i++){
+// console.log( " 5 * " + i + " = " + (5 * i));
+// }
+
+
+
+// printing numbers from 1 to 20
+
+// for ( let i = 0; i <= 10; i++){
+//     sq = i * i ;
+//     console.log(sq);
+// }
+
+
+// let str = " java script"
+
+// for( let  ch of str){
+//     console.log(ch);
+// }
+
+
+// printing sum of numbers 
+
+// let sum = 0;
+// for( let i = 0; i <= 100; i++){
+//    sum += i ;
+   
+// }
+
+//  console.log( sum );
+
+
+// count vowels 
+
+// let str = " programmingaaaa";
+// let count = 0;
+// for( let i = 0; i <= str.length; i++){
+//     if("aeiouAEIOU" .includes(str[i])){
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+// let str = "java script";
+// let rev = "";
+
+// for( let i = str.length-1; i >=0; i--){
+//     rev += str[i];
+// }
+
+// console.log(rev);
+
+
+// finding largest number in the array 
+
+// let arr = [56,52,77,84,59,85,101];
+// let Max = arr[0];
+
+// for( let i = 0; i <= arr.length; i++){
+//     if( arr[i] > Max){
+//         Max = arr[i];
+//     }
+// }
+
+// console.log(Max);
+
+
+// let arr = [56,52,77,84,59,85,101,2];
+// let Min = arr[0];
+
+// for( let i = 0; i <= arr.length; i++){
+//     if( arr[i] < Min){
+//         Min = arr[i];
+//     }
+// }
+
+// console.log(Min);
+
+
+// let num = 5656;
+// let count = 0;
+
+// for( ; num > 0;  num = Math.floor(num / 10)){
+//     count++; 
+// }
+
+// console.log(count);
+
+// checking whether the number is plaimdrome or not 
+
+// let str = "madam";
+// let rev = "" ;
+
+// for ( let i = str.length-1; i >= 0; i--){
+    
+//     rev += str[i];
+
+//     }
+
+//     if( str === rev){
+//         console.log("Palimdrome");
+//     } else {
+//         console.log("Not Palimdrome");
+//     }
+
+
+// sum of square of digits 
+
+// let num = 236;
+
+// let sum = 0;
+
+// for(; num > 0; num = Math.floor(num/10)){
+
+//     let d = num % 10;
+//     sum += d * d;
+// }
+
+// console.log(sum);
+
+
+// let num = 9;
+// let sq = num * num;
+
+// let sum = 0;
+
+// for( ; sq > 0; sq = Math.floor(sq/10)){
+//     sum += sq % 10 ;
+// }
+
+// console.log( sum === num ? "Neon" : " not neon");
+
+
+// count prime digits in a number
+
+// let num = 23579;
+// let count = 0;
+
+// for( ; num > 0; num = Math.floor(num/10)){
+//     let d = num % 10;
+
+//     if( d === 2 || d === 3 || d === 5 || d === 7){
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+
+// let num = 123;
+// let result = " ";
+
+// for( ; num > 0; num = Math.floor(num/10)){
+//     let d = num % 10;
+
+//     result = (d * d) + result;
+// }
+
+//  console.log(result);
+
+let num = 1023;
+let temp = num;
+let duck = false;
+
+for( ; temp > 0; temp = Math.floor(temp/10) ){
+        if(temp % 10 === 0) duck = true;
+    }
+
+    console.log( duck ? "Duck number" : "not a duck number");
