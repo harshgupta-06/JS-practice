@@ -1040,11 +1040,24 @@
 
 //  printing first and last digit 
 
-let num = 45678930;
+// let num = 45678930;
 
-let last = num % 10;
-let first = num;
+// let last = num % 10;
+// let first = num;
 
-for( ; first >= 10; first = Math.floor(first/10));
+// for( ; first >= 10; first = Math.floor(first/10));
 
-console.log(first , last );
+// console.log(first , last );
+
+
+// questions based on conditional statements 
+
+let a = 10 , b = 25 , c = 4 , d = 18;
+
+let max = a;
+
+if ( b > max) max = b;
+if ( c > max) max = c;
+if ( d > max) max = d;
+
+console.log(max);
