@@ -1052,12 +1052,137 @@
 
 // questions based on conditional statements 
 
-let a = 10 , b = 25 , c = 4 , d = 18;
+// let a = 10 , b = 25 , c = 4 , d = 18;
 
-let max = a;
+// let max = a;
 
-if ( b > max) max = b;
-if ( c > max) max = c;
-if ( d > max) max = d;
+// if ( b > max) max = b;
+// if ( c > max) max = c;
+// if ( d > max) max = d;
 
-console.log(max);
+// console.log(max);
+
+// let year = 2024;
+
+// if( year % 400 === 0 )
+
+
+// let num = -5;
+
+// if ( num > 0) console.log("Positive");
+// if ( num < 0) console.log("negative");
+// if ( num === 0) console.log("zero");
+
+
+// divisible by 3 and 5 but not 10
+
+// let num = 15;
+
+
+// if ( num % 3 === 0 && num % 5 === 0 && num % 10 !== 0 ){
+//     console.log("valid number");
+
+// } else {
+//     console.log("invalid number");
+// }
+
+
+// electricity bill 
+
+// let units = 250;
+
+// let bill = 0;
+
+// if( units <= 100){
+//     bill = units * 1;
+// } else if ( units <= 200){
+//     bill = 100 * 1 + ( units - 100) * 2;
+// } else {
+//     bill = 100 * 1 + 100 * 2 + ( units - 200) * 3;
+// }
+
+// console.log(bill);
+
+// types of triangles e
+
+// let a = 5, b = 5 , c = 5;
+
+// if( a == b && b == c ){
+//     console.log("equilateral");
+// } else if ( a == b || b == c || c == a){
+//     console.log("isoscles Triangle")
+// } else {
+//     console.log("scalence")
+// }
+
+
+// Grade calculator
+
+// let marks = 82;
+
+// if( marks >= 90) console.log("A");
+// else if ( marks >= 75) console.log("B");
+// else if ( marks >= 60) console.log("C");
+// else if ( marks >= 40) console.log("D");
+
+// else console.log("Fail");
+
+
+// let num = 121;
+// let temp = num;
+
+// let rev = 0;
+
+// while ( temp > 0){
+//     rev = rev * 10 + ( temp % 10);
+//     temp = Math.floor(temp / 10);
+// }
+
+
+// if ( num === rev) console.log("palimdrome");
+// else console.log("Not Palindrome");
+
+
+// Login system 
+
+// let username = "admin";
+// let password = "1234"
+
+// if(username === "admin" && password === "1234"){
+//     console.log("login successfull");
+// } else if (username === "admin"){
+//     console.log("wrong Password");
+// } else {
+//     console.log("user not found");
+// }
+
+
+// let num = 1221;
+// let temp = num;
+
+// let rev = 0;
+
+// while ( temp > 0) {
+//     rev = rev * 10 + ( temp  % 10);
+//     temp = Math.floor(temp / 10);
+// }
+
+// if ( num === rev ) console.log("Palimdrome");
+
+// else console.log("not Palimdrome");
+
+// print numbers from 1 - 50
+
+
+ for ( let i = 2; i <= 50; i++ ){
+    let Prime = true;
+
+    for ( let j = 2; j <= i/2; j++){
+        if ( i % j === 0){
+            Prime = false;
+            break;
+        }
+    }
+
+    if( Prime ) console.log(i);
+ }
