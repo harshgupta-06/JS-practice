@@ -1493,14 +1493,136 @@
 // }
 
 
-let num = 7;
+// let num = 7;
 
-switch ( num % 2){
-    case 0:
-    console.log("even");
-    break;
+// switch ( num % 2){
+//     case 0:
+//     console.log("even");
+//     break;
 
-    case 1:
-        console.log("odd");
-        break;
+//     case 1:
+//         console.log("odd");
+//         break;
+// }
+
+
+// let num1 = 20;
+// let num2 = 4;
+// let operator = "/" ;
+// let result ;
+
+
+// switch ( operator){
+//     case "+":
+//     result = num1 + num2;
+//     break;
+
+//     case "-":
+//     result = num1 - num2;
+//     break;
+
+//     case "*":
+//     result = num1 * num2;
+//     break;
+
+//      case "/":
+//         if(num2 === 0){
+//             result = ("cannot divide by zero");
+//         } else {
+//         result = num1 / num2;
+//     }
+//     break;
+
+//     default:
+//         result = "invalid operator ";
+// }
+
+
+// console.log(result);
+
+// let ch = "E";
+
+// switch (ch) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//     case "A":
+//     case "E":
+//     case "I":
+//     case "O":
+//     case "U":
+//         console.log("Vowel");
+//         break;
+
+//         default:
+//             console.log("constant");
+
+
+// }
+
+//  let choice = 2;
+//  let balance = 1000;
+
+//  switch(choice){
+//     case 1:
+//         console.log("Your Balance is :" , balance);
+//         break;
+
+//  case 2:
+//     let withdraw = 3000;
+//     if( withdraw <= balance){
+//         balance -= withdraw;
+
+//         console.log("Withdraw successful . New balance :" , balance);
+
+//     } else {
+//         console.log("Insufficient Balance");
+//     }
+//     break;
+
+//     case 3: 
+//     console.log("Thankuu for using ATM");
+//     break;
+
+//     default:
+//         console.log("invalid choice");
+//  }
+
+//  count vowels in the areray of strings 
+
+// let arr = ["applea" , "skya" , "orangea" , "whya"]
+
+// function countVowels(arr){
+//     let count = 0;
+    
+//     for(let word of arr){
+//         for(let ch of word){
+//             if("aeiouAEIOU" .includes(ch)){
+//                 count++;
+//             }
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countVowels(arr));
+
+
+// largets word in the array 
+
+function longestWord(arr){
+    let longest = arr[0];
+
+
+    for( let word of arr){
+        if(word.length > longest.length){
+            longest = word;
+        }
+    }
+
+    return longest;
 }
+
+console.log(longestWord(["cat" , "elephant" , "dog" , "tiger"]));
