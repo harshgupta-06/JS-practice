@@ -7,7 +7,7 @@
 // let count = 0;
 
 // for(; num > 0 ; num = Math.floor(num / 10)){
-    
+
 //     count ++;
 // }
 
@@ -144,7 +144,7 @@
 // for( let i = 1; i <= 10; i++){
 //     sum += i;
 // }
-  
+
 // console.log("sum = " , sum);
 
 // for(let i = 1; i <= 10; i++){
@@ -405,7 +405,7 @@
 
 // let str = "hello   world";
 // let emtySpaces = 0;
-  
+
 
 // for( let ch of str ){
 //   if( ch === " ") emtySpaces++;
@@ -611,7 +611,7 @@
 //  let sum = arr.reduce((prev,curr) => {
 //     return prev+curr;
 
-    
+
 // });
 
 // console.log( " Sum = ",sum);
@@ -620,7 +620,7 @@
 // let mul = arr.reduce((prev,curr) => {
 //     return prev*curr;
 
-    
+
 // });
 
 // console.log( " Factorial = ",mul);
@@ -657,7 +657,7 @@
 
 //     return rev;
 
-    
+
 // }
 
 // let result = reverseString("harshgupta");
@@ -892,7 +892,7 @@
 // let sum = 0;
 // for( let i = 0; i <= 100; i++){
 //    sum += i ;
-   
+
 // }
 
 //  console.log( sum );
@@ -961,7 +961,7 @@
 // let rev = "" ;
 
 // for ( let i = str.length-1; i >= 0; i--){
-    
+
 //     rev += str[i];
 
 //     }
@@ -1174,15 +1174,333 @@
 // print numbers from 1 - 50
 
 
- for ( let i = 2; i <= 50; i++ ){
-    let Prime = true;
+//  for ( let i = 2; i <= 50; i++ ){
+//     let Prime = true;
 
-    for ( let j = 2; j <= i/2; j++){
-        if ( i % j === 0){
-            Prime = false;
-            break;
-        }
-    }
+//     for ( let j = 2; j <= i/2; j++){
+//         if ( i % j === 0){
+//             Prime = false;
+//             break;
+//         }
+//     }
 
-    if( Prime ) console.log(i);
- }
+//     if( Prime ) console.log(i);
+//  }
+
+// let num = 28;
+// let sum = 0;
+
+// for( let i = 1; i <= num / 2; i++){
+//     if( num % i === 0) sum += i;
+// }
+
+// if ( sum === num ) console.log("perfect number ");
+// else console.log("Not perfect")
+
+
+
+// Password strength checker 
+
+// let password = "Hello123";
+// let hasUpper = false , hasDigit = false;
+
+// for( let ch of password ){
+//     if( ch >= 'A' && ch <= 'Z') hasUpper = true;
+//     if( ch >= '0' && ch <= '9') hasDigit = true;
+
+// }
+
+// if( password.length >= 8 && hasUpper && hasDigit){
+//     console.log("Strong password");
+// } else {
+//     console.log("weak password");
+// }
+
+// reverse a string 
+
+// let str = "Hello";
+// let rev = " ";
+
+// for ( let i = str.length - 1; i >= 0; i--){
+//     rev += str [i];
+// }
+
+// console.log(rev);
+
+
+// let str = "aaiihh"
+
+// let count = 0;
+
+// for( let ch of str){
+//     if("aeiouAEIOU" .includes(ch)) count++
+// }
+
+// console.log(count);
+
+
+// let str = "madam" 
+//  let rev = "";
+
+
+//  for ( let i = str.length-1; i >= 0; i--){
+//     rev += str[i];
+//  }
+
+//  if( str === rev) console.log("Palimdrome");
+//  else console.log("Not Palimdrome");
+
+
+// let arr = [ 65,98,99,74,25,89,63] ;
+
+// let max = arr[0];
+
+// for( let num of arr){
+//     if ( num > max ) max = num;
+// }
+
+// console.log(max);
+
+// let arr = [ 65,98,99,74,25,89,63] ;
+// let even = 0 , odd = 0; 
+
+// for ( let num of arr){
+//     if( num % 2 === 0) even++;
+//     else odd++;
+// }
+
+
+// console.log("evem: ", even, "  odd: " , odd);
+
+// Remove duplictes 
+
+// let arr = [ 1,2,2,2,3,6,5,5];
+// let unique = [];
+
+// for ( let num of arr){
+//     if(!unique.includes(num)){
+//         unique.push(num);
+//     }
+// }
+
+// console.log(unique);
+
+// sum of array 
+
+// let arr = [5,10,15];
+// let sum = 0;
+
+// for( let num of arr){
+//     sum += num;
+// }
+
+// console.log(sum);
+
+// printing longest word 
+
+// let str = " I love javascript programming";
+// let words = str.split (" ");
+// let longest = " ";
+
+// for( let word of words ){
+//     if( word.length > longest.length){
+//         longest = word;
+//     }
+// }
+
+// console.log(longest);
+
+
+// let arr = [0,1,0,2,0];
+// let result = [];
+
+// for( let num of arr){
+//     if( num !== 0) result.push(num);
+// }
+
+// while ( result.length < arr.length){
+//     result.push(0);
+// }
+
+// console.log(result);
+
+
+// Intersection of two arays 
+
+// let arr1 = [ 1,2,3,4];
+// let arr2 = [ 3,4 ,5,6];
+// let arr3 = [ 3,4 ,50,60];
+// let arr4 = [ 3,4 ,54,63];
+
+
+
+// let result = [];
+
+// for( let num of arr1){
+//     if(
+//         arr2.includes(num) &&
+//          arr3.includes(num) &&
+//           arr4.includes(num)
+//     ) {
+//         result.push(num);
+//     }
+// }
+
+// console.log(result);
+
+// let arr = [1,2,3,4,5];
+// let sorted = true ;
+
+// for( let i = 0; i < arr.length - 1; i++ ){
+//     if( arr[i] > arr[ i + 1 ]) {
+//         sorted = false ;
+//         break;
+//     }
+// }
+
+// console.log(sorted);
+
+// month Name 
+
+// let month = 1;
+
+// switch (month) {
+//     case 1:
+//         console.log("january");
+//         break;
+
+//          case 1:
+//         console.log("january");
+//         break;
+
+//          case 2:
+//         console.log("feburary");
+//         break;
+
+//          case 3:
+//         console.log("March");
+//         break;
+
+//         case 4:
+//         console.log("April");
+//         break;
+
+//         case 5:
+//         console.log("May");
+//         break;
+
+//         default : 
+//         console.log("Invalid Month");
+
+
+
+// }
+
+// traffic signal 
+
+// let signal = "red";
+
+// switch(signal){
+//     case "red":
+//     console.log("stop");
+//     break;
+
+//      case "Yellow":
+//     console.log("Get Ready");
+//     break;
+
+//      case "Green":
+//     console.log("Go");
+//     break;
+
+//     default:
+//          console.log("invalid signal");
+// }
+
+
+// let a = 10;
+//  b = 5;
+
+//  let operator = "+";
+
+//  switch(operator){
+//     case "+":
+//         console.log(a+b);
+//         break;
+
+//         case "+":
+//         console.log(a+b);
+//         break;
+
+//         case "-":
+//         console.log(a-b);
+//         break;
+
+//         case "*":
+//         console.log(a*b);
+//         break;
+
+//         case "/":
+//         console.log(a/b);
+//         break;
+
+//         default:
+//             console.log("invalid operator")
+//  }
+
+
+// let grade = "A";
+
+// switch (grade) {
+//      case "A":
+//         console.log("excellent");
+//         break;
+
+//         case "B":
+//         console.log("Very Good");
+//         break;
+
+//         case "C":
+//         console.log("Good");
+//         break;
+
+//         case "D":
+//         console.log("Pass");
+//         break;
+
+//         case "E":
+//         console.log("Fail");
+//         break;
+
+//         default:
+//             console.log("invalid Grade");
+// }
+
+
+// let ch = "a";
+
+// switch (ch) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "u":
+//     case "o":
+//         console.log("vowel");
+//         break;
+//         default:
+//             console.log("Constant");
+
+// }
+
+
+let num = 7;
+
+switch ( num % 2){
+    case 0:
+    console.log("even");
+    break;
+
+    case 1:
+        console.log("odd");
+        break;
+}
