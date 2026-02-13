@@ -1612,17 +1612,64 @@
 
 // largets word in the array 
 
-function longestWord(arr){
-    let longest = arr[0];
+// function longestWord(arr) {
+//     let longest = arr[0];
+
+//     for(let word of arr){
+//         if(word.length > longest.length){
+//             longest = word;
+//         }
+//     }
+
+//     return longest;
+// }
 
 
-    for( let word of arr){
-        if(word.length > longest.length){
-            longest = word;
+// function countVowelWords(sentence){
+//     let words = sentence.split(" ");
+//     let count = 0;
+
+//   for( let word of words){
+//     let first = word[0].toLowerCase();
+//     if("aeiou" .includes(first)){
+//         count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countVowelWords("apple is orange and umbrella"));
+
+
+// function longestWord(arr){
+//     let longest = arr[0];
+
+//     for( let word of arr){
+//         if(word.length > longest.length){
+//             longest = word;
+//         }
+//     }
+
+//     return longest; 
+// }
+
+// console.log(longestWord(["cat" , "elephant" , "dog" , "tiger"]));
+
+// Seperate Even and Odd numbers 
+
+function separateEvenOdd(arr){
+    let even = [];
+    let odd = [];
+
+    for(let num of arr){
+        if(num % 2 === 0){
+            even.push(num);
+        } else {
+            odd.push(num);
         }
     }
 
-    return longest;
+    return { even , odd };
 }
 
-console.log(longestWord(["cat" , "elephant" , "dog" , "tiger"]));
+console.log(separateEvenOdd([1,2,3,4,5,6,7,8,9]));
