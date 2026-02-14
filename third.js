@@ -1657,19 +1657,72 @@
 
 // Seperate Even and Odd numbers 
 
-function separateEvenOdd(arr){
-    let even = [];
-    let odd = [];
+// function separateEvenOdd(arr){
+//     let even = [];
+//     let odd = [];
 
-    for(let num of arr){
-        if(num % 2 === 0){
-            even.push(num);
-        } else {
-            odd.push(num);
-        }
-    }
+//     for(let num of arr){
+//         if(num % 2 === 0){
+//             even.push(num);
+//         } else {
+//             odd.push(num);
+//         }
+//     }
 
-    return { even , odd };
+//     return { even , odd };
+// }
+
+// console.log(separateEvenOdd([1,2,3,4,5,6,7,8,9]));
+
+
+// function charFrquency(str){
+//      let freq = {};
+
+//      for (let ch of str){
+//         if(freq[ch]){
+//             freq[ch]++;
+//         } else {
+//             freq[ch] = 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+//         }
+
+//      }
+// }
+
+// for( let i = 1; i <= 20; i++){
+//     if( i % 3 === 0 && i % 5 === 0){
+//         console.log("FizzBuzz");
+//     }
+
+//      else if( i % 5 === 0){
+//         console.log("Buzz");
+//     }
+
+//     else if( i % 3 === 0){
+//         console.log("Fizz");
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+
+// let num = 121;
+// let orginal = num;
+// let rev = 0;
+
+// for( ; num > 0; num = Math.floor(num/10)){
+//     let digit = num % 10;
+//     rev = rev * 10 + digit;
+// }
+
+
+// console.log(orginal === rev ? "Palimdrome" : "Not Palimdrome");
+
+
+let num = 12345;
+let count = 0;
+
+for(; num > 0; num = Math.floor(num / 10)){
+    count++;
 }
 
-console.log(separateEvenOdd([1,2,3,4,5,6,7,8,9]));
+console.log("count = " , count);
