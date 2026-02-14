@@ -1718,11 +1718,110 @@
 // console.log(orginal === rev ? "Palimdrome" : "Not Palimdrome");
 
 
-let num = 12345;
-let count = 0;
+// let num = 12345;
+// let count = 0;
 
-for(; num > 0; num = Math.floor(num / 10)){
-    count++;
+// for(; num > 0; num = Math.floor(num / 10)){
+//     count++;
+// }
+
+// console.log("count = " , count);
+
+// let arr = [ 10,20,30,40,50];
+// let sum = 0;
+
+// for( let i = 0; i < arr.length; i++){
+//     sum += arr[i];
+// }
+
+// console.log(sum);
+
+// let arr = [5,12,8,20,23];
+// let max = arr[0];
+
+// for( let i = 1; i < arr.length; i++){
+//     if( arr[i] > max){
+//         max = arr[i];
+//     }
+// }
+
+// console.log(max);
+
+// let arr = [12,22,54,48,78,96,33];
+// let even = 0;
+// let odd = 0;
+
+// for( let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 === 0){
+//         even++;
+//     }else{
+//         odd++;
+//     }
+// }
+
+// console.log("even " , even);
+// console.log("odd" , odd);
+
+
+// let arr = [1,2,3,4];
+// let reversed = [];
+
+// for( let i = arr.length - 1; i >= 0; i--){
+//     reversed.push(arr[i]);
+// }
+
+// console.log(reversed);
+
+// let arr = [1,2,3,4];
+// arr.reverse();
+
+// console.log(arr);
+
+
+// let arr = [ 10,5,8,15];
+
+// let largest = arr[0];
+// let secondLargest = arr[0];
+
+// for( let i = 1; i < arr.length; i++){
+
+//     if( arr[i] > largest){
+//         secondLargest = largest;
+//         largest = arr[i];
+//     }
+// }
+
+// console.log("secondLargest = " , secondLargest);
+// console.log("Largest = " , largest);
+
+
+// let arr = [1,2,3,8,5,6,7,7,7,1,1];
+// let duplicates = [];
+
+// for( let i = 0; i < arr.length; i++){
+//     for( let j = i + 1; j < arr.length; j++){
+//         if(arr[i] === arr[j] && !duplicates.includes(arr[i])){
+//             duplicates.push(arr[i]);
+//         }
+//     }
+// }
+
+// console.log(duplicates);
+
+let arr = [ 0,1,0,12,0,6,0];
+let result = [];
+let zeroCount = 0;
+
+for(let i = 0; i < arr.length; i++){
+    if( arr[i] === 0){
+        zeroCount++;
+    } else {
+        result.push(arr[i]);
+    }
 }
 
-console.log("count = " , count);
+for( let i = 0; i < zeroCount; i++){
+    result.push(0);
+}
+
+console.log(result);
