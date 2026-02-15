@@ -1808,20 +1808,158 @@
 
 // console.log(duplicates);
 
-let arr = [ 0,1,0,12,0,6,0];
-let result = [];
-let zeroCount = 0;
+// let arr = [ 0,1,0,12,0,6,0];
+// let result = [];
+// let zeroCount = 0;
 
-for(let i = 0; i < arr.length; i++){
-    if( arr[i] === 0){
-        zeroCount++;
-    } else {
-        result.push(arr[i]);
-    }
+// for(let i = 0; i < arr.length; i++){
+//     if( arr[i] === 0){
+//         zeroCount++;
+//     } else {
+//         result.push(arr[i]);
+//     }
+// }
+
+// for( let i = 0; i < zeroCount; i++){
+//     result.push(0);
+// }
+
+// console.log(result);
+
+
+// questions based on strings 
+
+
+// let str = "Harsh Gupta ";
+// let count = 0;
+
+// for( let ch of str ){
+//     if("aeiouAEIOU" .includes(ch)){
+//         count++;
+//     }
+// }
+
+// console.log(count);
+
+
+// let str = "hello";
+// let rev = "";
+
+// for ( let i = str.length-1; i >= 0; i--){
+//     rev += str[i];
+// }
+
+
+// console.log(rev);
+
+// let str = "hello";
+// let rev = "";
+
+// for ( let i = str.length-1; i >= 0; i--){
+//     rev += str[i];
+// }
+
+
+// console.log(rev);
+
+
+// largest number in the array 
+
+// let arr = [ 10,20,55,87,96,30,24,100];
+// let Max = arr[0];
+
+// for( let i = 1; i < arr.length; i++){
+//     if(arr[i] > Max){
+//         Max = arr[i];
+//     }
+// }
+
+// console.log("Max = " , Max);
+
+// count even and odd
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,22,55,45,65,88,78];
+// let even = 0;
+// let odd = 0;
+
+// for(let i = 0; i < arr.length; i++){
+//     if( i % 2 === 0 ){
+//         even ++;
+//     } else {
+//         odd++;
+//     }
+// }
+
+// console.log(" Odd = " , odd);
+// console.log(" Even = " , even);
+
+
+// let arr = [1,2,3,4,5,6,7,8,9,10,22,55,45,65,88,78];
+// let even = [];
+// let odd = [];
+
+// for(let i = 0; i < arr.length; i++){
+//     if( arr[i] % 2 === 0 ){
+//         even.push(arr[i]);
+//     } else {
+//         odd.push(arr[i]);
+//     }
+// }
+
+// console.log(" Odd array  = " , odd);
+// console.log(" Even array = " , even);
+
+
+
+// let arr = [1,2,33,33,55,55,55];
+// let result = [];
+
+// for( let i = 0 ; i < arr.length; i++){
+//     if(!result.includes(arr[i])){
+//         result.push(arr[i]);
+//     }
+// }
+
+// console.log(result);
+
+
+// let str = "aabbc";
+// let freq = {};
+
+// for( let i = 0; i < str.length; i++){
+//     let char = str[i];
+
+//     if(freq[char]){
+//         freq[char]++;
+//     } else {
+//         freq[char] = 1;
+//     }
+// }
+
+// console.log(freq);
+
+// let arr = [ 10,5,8,20];
+// let largest = -Infinity;
+// let secondLargest = -Infinity;
+
+// for( let i = 0; i < arr.length; i++){
+//     if(arr[i] > largest){
+//         secondLargest = largest;
+//         largest = arr[i];
+//     } else if ( arr[i] > secondLargest && arr[i] !== largest) {
+//         secondLargest = arr[i];
+//     }
+// }
+
+// console.log(secondLargest , largest );
+
+let str = "hello world";
+let words = str.split(" ");
+let result = "";
+
+for (let i = 0; i < words.length; i++) {
+  result += words[i][0].toUpperCase() + words[i].slice(1) + " ";
 }
 
-for( let i = 0; i < zeroCount; i++){
-    result.push(0);
-}
-
-console.log(result);
+console.log(result.trim());
