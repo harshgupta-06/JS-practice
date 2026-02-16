@@ -1954,12 +1954,138 @@
 
 // console.log(secondLargest , largest );
 
-let str = "hello world";
-let words = str.split(" ");
-let result = "";
+// let str = "hello world";
+// let words = str.split(" ");
+// let result = "";
 
-for (let i = 0; i < words.length; i++) {
-  result += words[i][0].toUpperCase() + words[i].slice(1) + " ";
+// for (let i = 0; i < words.length; i++) {
+//   result += words[i][0].toUpperCase() + words[i].slice(1) + " ";
+// }
+
+// console.log(result.trim());
+
+
+// let str = "hello";
+// let freq = {};
+
+// for( let i = 0; i < str.length; i++){
+//   let char = str[i];
+
+//   if(freq[char]){
+//     freq[char]++;
+//   } else {
+//     freq[char] = 1;
+//   }
+// }
+
+// console.log(freq);
+
+
+// let arr = ["apple" , "banana" , "kiwi" , " strawberry"];
+// let longest = "";
+
+// for( let i = 0; i < arr.length; i++){
+//   if(arr[i].length > longest.length){
+//     longest = arr[i];
+//   }
+// }
+
+// console.log(longest);
+
+
+// to Remove duplicates
+
+// let arr = [1,2,2,2,5,6,6,6,8,7,9];
+// let result = [];
+
+// for(let i = 0; i < arr.length; i++){
+//   if(!result.includes(arr[i])){
+//     result.push(arr[i]);
+//   }
+// }
+
+// console.log(result);
+
+
+// let str1 = "listen";
+// let str2 = "silent";
+
+// if(str1.length !== str2.length){
+//   console.log(false);
+// } else {
+//   let sorted1 = str1.split("").sort().join("");
+//   let soretd2 = str2.split("").sort().join("");
+
+//   console.log(sorted1 === soretd2);
+// }
+
+
+// let arr = [10,20,30,40,50,60];
+// let sum = 0;
+
+// for(let i = 0; i < arr.length; i++){
+//   sum += arr[i];
+// }
+
+
+// let average = sum / arr.length;
+// let result = [];
+
+// for( let i = 0; i < arr.length; i++){
+//   if(arr[i] > average){
+//     result.push(arr[i]);
+//   }
+// }
+
+// console.log(result);
+
+// character frequency 
+
+// let str = " hello";
+// let freq = {};
+
+
+// for( let i = 0; i < str.length; i++){
+//   let char = str[i];
+
+//   if(freq[char]){
+//     freq[char]++;
+    
+//   } else {
+//     freq[char] = 1;
+//   }
+  
+  
+// }
+
+// console.log(freq);
+
+// let arr = [ 1,2,2,2,5,6,8,9];
+// let result = [];
+
+// for(let i = 0; i < arr.length; i++){
+//   if(!result.includes(arr[i])) {
+//     result.push(arr[i]);
+//   }
+// }
+//   console.log(result);
+
+
+let arr = [ 10,20,30,40,50,60];
+let sum = 0;
+
+for ( let i = 0; i < arr.length; i++){
+  sum += arr[i];
 }
 
-console.log(result.trim());
+let average = sum / arr.length;
+let result = [];
+
+for( let i = 0; i < arr.length; i++){
+  if(arr[i] > average ){
+    result.push(arr[i]);
+  }
+}
+
+console.log(result);
+
