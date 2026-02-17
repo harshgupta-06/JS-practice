@@ -2137,10 +2137,59 @@
 
 // console.log(reverseString("hello"));
 
-function countVowels(str){
+// function countVowels(str){
 
-    let count = 0;
-    let vowels = "aeiouAEIOU";
+//     let count = 0;
+//     let vowels = "aeiouAEIOU";
 
-    for( let i = 0; i < str.length; i++)
+//     for( let i = 0; i < str.length; i++){
+//         if(vowels.includes(str[i])){
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countVowels("hello"));
+
+// let arr = [10,20,55,66,30];
+// function largestArr(arr){
+//     let largest = -Infinity;
+
+//     for( let i = 0; i < arr.length; i++){
+//         if(arr[i] > largest){
+//             largest = arr[i];
+//         }
+//     }
+
+//     return largest;
+// }
+
+// console.log(largestArr(arr));
+
+// function sumArr(arr){
+//     let sum = 0;
+
+//     for( let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+    
+//     }
+
+//     return sum;
+// }
+
+// console.log(sumArr([10,20,30]));
+
+
+function isPalimdrome(str){
+    let reversed = "";
+
+    for(let i = str.length-1; i >= 0; i--){
+        reversed += str[i];
+    }
+
+    return str === reversed;
 }
+
+console.log(isPalimdrome("madam"));
