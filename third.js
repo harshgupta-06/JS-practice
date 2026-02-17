@@ -2071,21 +2071,76 @@
 //   console.log(result);
 
 
-let arr = [ 10,20,30,40,50,60];
-let sum = 0;
+// let arr = [ 10,20,30,40,50,60];
+// let sum = 0;
 
-for ( let i = 0; i < arr.length; i++){
-  sum += arr[i];
+// for ( let i = 0; i < arr.length; i++){
+//   sum += arr[i];
+// }
+
+// let average = sum / arr.length;
+// let result = [];
+
+// for( let i = 0; i < arr.length; i++){
+//   if(arr[i] > average ){
+//     result.push(arr[i]);
+//   }
+// }
+
+// console.log(result);
+
+
+// function 
+
+// function greet(name){
+//     return "Hello  " + name + "!";
+// }
+//  console.log(greet("Riya"));
+
+// function isEven(num){
+//     return num % 2 === 0;
+// }
+
+// console.log(isEven(4));
+
+
+// square
+
+// function square(num){
+//     return num * num ;
+// }
+
+// console.log(square(5));
+
+
+// function getLength(str){
+//     let count = 0;
+
+//     for( let i = 0; str[i] !== undefined; i++){
+//         count++;
+//     }
+//     return count;
+// }
+
+// console.log(getLength("hello"));
+
+
+// function reverseString(str){
+//     let reversed = "";
+
+//     for( let i = str.length-1; i >= 0; i--){
+//         reversed += str[i];
+//     }
+
+//     return reversed;
+// }
+
+// console.log(reverseString("hello"));
+
+function countVowels(str){
+
+    let count = 0;
+    let vowels = "aeiouAEIOU";
+
+    for( let i = 0; i < str.length; i++)
 }
-
-let average = sum / arr.length;
-let result = [];
-
-for( let i = 0; i < arr.length; i++){
-  if(arr[i] > average ){
-    result.push(arr[i]);
-  }
-}
-
-console.log(result);
-
