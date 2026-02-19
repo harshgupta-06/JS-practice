@@ -2392,18 +2392,42 @@
 // checkEvenOddArray([1, 2, 3, 45, 66, 54, 55]);
 
 
-let str = "Harsh Gupta";
+// let str = "Harsh Gupta";
 
- function countVowels (str) {
+//  function countVowels (str) {
 
-    let count = 0;
-    for( let i = 0; i < str.length; i++){
-        if("aeiouAEIOU" .includes(str[i])){
-            count++;
-        }
-    }
+//     let count = 0;
+//     for( let i = 0; i < str.length; i++){
+//         if("aeiouAEIOU" .includes(str[i])){
+//             count++;
+//         }
+//     }
 
-    return count;
- }
+//     return count;
+//  }
 
- console.log(" count = " , countVowels(str));
+//  console.log(" count = " , countVowels(str));
+
+// let arr = [ 12,22,56,66];
+
+// function largestNumber (arr){
+
+//     let largest = arr[0];
+
+//     for( let i = 0; i < arr.length; i++){
+//         if( arr[i] > largest){
+//             largest = arr[i];
+//         }
+//     }
+
+//     return largest;
+// }
+
+// console.log(largestNumber(arr));
+
+
+function toUpperCaseString(str){
+    return str.toUpperCase();
+}
+
+console.log(toUpperCaseString("harsh"));
