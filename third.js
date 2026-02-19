@@ -2426,8 +2426,29 @@
 // console.log(largestNumber(arr));
 
 
-function toUpperCaseString(str){
-    return str.toUpperCase();
+// function toUpperCaseString(str){
+//     return str.toUpperCase();
+// }
+
+// console.log(toUpperCaseString("harsh"));
+
+
+// Write a function that checks if a string is a palindrome.
+
+let str = "madam";
+
+function isPalindrome(str) {
+    let rev = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        rev += str[i];
+    }
+
+    if (str === rev) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-console.log(toUpperCaseString("harsh"));
+console.log(isPalindrome(str));
