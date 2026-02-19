@@ -2299,16 +2299,111 @@
 
 // find common elements 
 
-function findCommonElements(arr1, arr2) {
-    let result = [];
+// function findCommonElements(arr1, arr2) {
+//     let result = [];
 
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
-            result.push(arr1[i]);
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
+//             result.push(arr1[i]);
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
+
+
+// function without arguments 
+
+// function greet () {
+//     console.log("hello riya ");
+// }
+
+// greet();
+// greet();
+// greet();
+
+// function greet (name){
+//     console.log("Hello" + name);
+// }
+
+// greet(" Riya");
+// greet(" Ankit");
+
+
+// function print () {
+//     console.log(" I am learning java script ");
+// }
+
+// print();
+// print();
+
+
+// function square (num){
+//   console.log(" square is " , num * num);
+// }
+
+// square(5);
+// square(50);
+
+// let str = "Harsh";
+// function lengthOfString(str){
+//     let count = 0;
+//     for( let i = 0; i < str.length; i++){
+//         count ++;
+//     }
+
+//     return count;
+// }
+
+// console.log(lengthOfString(str));
+
+
+
+// function addNumbers ( num1,num2){
+//     return num1 + num2;
+// }
+
+// console.log(addNumbers(5,3));
+
+
+// function addNumbers(num1 , num2){
+//     return num1 + num2;
+// }
+
+// let num1 = Number( prompt("Enter first number : "));
+// let num2 = Number(prompt("Enter Second number : "));
+
+
+
+// console.log("Sum is : " , num1 + num2 );
+
+// function checkEvenOddArray(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 === 0) {
+//             console.log(arr[i] + " is Even");
+//         } else {
+//             console.log(arr[i] + " is Odd");
+//         }
+//     }
+// }
+
+// checkEvenOddArray([1, 2, 3, 45, 66, 54, 55]);
+
+
+let str = "Harsh Gupta";
+
+ function countVowels (str) {
+
+    let count = 0;
+    for( let i = 0; i < str.length; i++){
+        if("aeiouAEIOU" .includes(str[i])){
+            count++;
         }
     }
 
-    return result;
-}
+    return count;
+ }
 
-console.log(findCommonElements([1, 2, 3], [2, 3, 4]));
+ console.log(" count = " , countVowels(str));
