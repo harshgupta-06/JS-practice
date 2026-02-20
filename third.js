@@ -2435,20 +2435,122 @@
 
 // Write a function that checks if a string is a palindrome.
 
-let str = "madam";
+// let str = "madam";
 
-function isPalindrome(str) {
-    let rev = "";
+// function isPalindrome(str) {
+//     let rev = "";
 
-    for (let i = str.length - 1; i >= 0; i--) {
-        rev += str[i];
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         rev += str[i];
+//     }
+
+//     if (str === rev) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(isPalindrome(str));
+
+
+
+// Write a function to Couint vowels 
+
+// let str = "Harsh Gupta";
+
+// function countVowels (str) {
+
+//     let count = 0;
+//     for( let ch of str) {
+//         if("aeiouAEIOU" .includes(ch)){
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countVowels(str));
+
+
+// let str = "Harsh GUptaaaa";
+//  function countVowels (str) {
+//      let count = 0;
+//      for( let ch of str ){
+//         if("aeiouAEIOU" .includes(ch)){
+//             count++;
+//         }
+//      }
+
+//      return count;
+//  }
+
+//  console.log(countVowels(str));
+
+
+// function that return the sum of all the numbers in the array 
+
+// let arr = [12,52,62];
+
+// function sumOfArray(arr){
+//     let sum = 0;
+
+//     for( let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//       return sum;
+// }
+
+// console.log(sumOfArray(arr));
+
+
+
+// function that returns a largest number in the array
+
+// let arr = [ 12,52,54,8,88];
+
+// function largestNumber(arr) {
+
+//     let largest = arr[0];
+//     for( let i = 0; i < arr.length; i++){
+//         if ( arr[i] > largest ){
+//             largest = arr [i];
+//         }
+//     }
+
+//     return largest ;
+// }
+
+// console.log( largestNumber(arr));
+
+
+// isPalimdrome
+
+
+// let str = "madam";
+
+// function isPalindrome(str){
+
+//     let rev = "";
+
+//     for(let i = str.length-1; i >= 0; i--){
+//         rev += str[i];
+//     }
+
+//     return  str === rev;
+// }
+//  console.log(isPalindrome(str));
+
+let n = 3; 
+
+function factorial(n){
+    let result = 1;
+
+    for( let i = 1; i <= n; i++){
+        result *= i;
     }
 
-    if (str === rev) {
-        return true;
-    } else {
-        return false;
-    }
+    return result;
 }
 
-console.log(isPalindrome(str));
+console.log(factorial(n));
