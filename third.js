@@ -2541,16 +2541,152 @@
 // }
 //  console.log(isPalindrome(str));
 
-let n = 3; 
+// let n = 3; 
 
-function factorial(n){
-    let result = 1;
+// function factorial(n){
+//     let result = 1;
 
-    for( let i = 1; i <= n; i++){
-        result *= i;
+//     for( let i = 1; i <= n; i++){
+//         result *= i;
+//     }
+
+//     return result;
+// }
+
+// console.log(factorial(n));
+
+
+// Count occurance 
+// function countOccurance ( str , char){
+//     let count = 0;
+
+//     for( let ch of str ){
+//         if(ch === char){
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countOccurance("programming" , "g"));
+
+
+// remove duplicates
+
+// let arr = [1,2,2,5,3,9];
+
+// function removeDuplicates(arr){
+//     let result = [];
+
+//     for(let num of arr){
+//         if(!result.includes(num)){
+//             result.push(num);
+//         }
+//     }
+
+//     return result;
+// }
+
+
+// console.log(removeDuplicates(arr));
+
+//  let arr = [20,52,55,69];
+// function secondLargest (arr) {
+//     let largest = -Infinity;
+//     let secondLargest = -Infinity;
+
+//     for( let num of arr){
+//         if ( num > largest){
+//             second = largest;
+//             largest = num;
+//         } else if ( num > second && num !== largest){
+//             second = num;
+//         }
+//     }
+
+//   return second;
+// }
+
+// console.log(secondLargest(arr));
+
+// function longestWord (sentence) {
+//     let words = sentence.split(" ");
+//     let longest = "";
+
+//     for(let word of words){
+//         if(word.length > longest.length){
+//             longest = word;
+//         }
+//     }
+
+//     return longest;
+// }
+//  console.log(longestWord(" i love java script"));
+
+
+// function sumOfDigits(num){
+//     let sum = 0;
+//     for ( ; num > 0; num = Math.floor(num / 10)){
+//         sum += num % 10;
+//     }
+
+//     return sum;
+// }
+
+// console.log(sumOfDigits(123));
+
+// function sumOfDigits(num) {
+//     let sum = 0;
+
+//     while ( num > 0) {
+//         sum += num % 10;
+//         num = Math.floor(num/10);
+//     }
+
+//     return sum;
+// }
+
+// console.log(sumOfDigits(1234));
+
+
+// function isAnagram( str1 , str2){
+//     if( str1.length !== str2.length) return false;
+
+//     let sorted1 = str1.split("").sort().join("");
+//      let sorted2 = str2.split("").sort().join("");
+
+//      return sorted1 === sorted2;
+// }
+// console.log(isAnagram("listen" , "silent"));
+
+
+// function FrequencyCounter(str){
+//     let obj = {};
+
+//     for(let char of str){
+//         if(obj[char]){
+//             obj[char]++;
+//         } else {
+//             obj[char] = 1;
+//         }
+//     }
+
+//     return obj;
+// }
+
+// console.log(FrequencyCounter("aabbc"));
+
+function countOccurance(str , char){
+    let count = 0;
+
+    for(let ch of str){
+        if(ch === char){
+            count++;
+        }
     }
 
-    return result;
+    return count;
 }
 
-console.log(factorial(n));
+console.log(countOccurance("programming" , "g"));
