@@ -1596,7 +1596,7 @@
 
 // // function countVowels(arr){
 // //     let count = 0;
-    
+
 // //     for(let word of arr){
 // //         for(let ch of word){
 // //             if("aeiouAEIOU" .includes(ch)){
@@ -2050,12 +2050,12 @@
 
 // //   if(freq[char]){
 // //     freq[char]++;
-    
+
 // //   } else {
 // //     freq[char] = 1;
 // //   }
-  
-  
+
+
 // // }
 
 // // console.log(freq);
@@ -2173,7 +2173,7 @@
 
 // //     for( let i = 0; i < arr.length; i++){
 // //         sum += arr[i];
-    
+
 // //     }
 
 // //     return sum;
@@ -2677,16 +2677,163 @@
 
 // console.log(FrequencyCounter("aabbc"));
 
-function countOccurance(str , char){
-    let count = 0;
+// function countOccurance(str , char){
+//     let count = 0;
 
-    for(let ch of str){
-        if(ch === char){
-            count++;
-        }
+//     for(let ch of str){
+//         if(ch === char){
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// console.log(countOccurance("programming" , "g"));
+
+
+// function calculator ( num1, num2, operator){
+//     switch (operator){
+//         case "+":
+//             return num1 + num2;
+
+//             case "-":
+//             return num1 - num2;
+
+//             case "*":
+//             return num1 * num2;
+
+//             case "/":
+//             return num2 !== 0 ? num1 / num2: " cannot divide by zero";
+
+
+//             default:
+//                 return "Invalid Operator";
+
+//     }
+// }
+
+// console.log(calculator(10,5,"+"));
+
+
+// function getDay(dayNumber) {
+//     switch (dayNumber) {
+//         case 1:
+//             return Monday;
+
+//         case 2:
+//             return Tuesday;
+
+//         case 3:
+//             return Wednesday;
+//         case 4:
+//             return Thursday;
+//         case 5:
+//             return Friday;
+//         case 6:
+//             return Saturday;
+//         case 7:
+//             return Sunday;
+//         default:
+//             return "invalid day number";
+
+
+
+
+
+
+
+//     }
+// }
+
+// console.log(getDay(3));
+
+
+// function getGrade(marks) {
+//     switch(true){
+//         case ( marks >= 90):
+//             return "A";
+
+//             case ( marks >= 75):
+//                 return "B";
+//                 case ( marks >= 50):
+//                     return "C";
+//                     default:
+//                         return "Fail";
+
+//     }
+// }
+
+// console.log(getGrade(82));
+
+// function trafficSignal(color){
+//     switch (color.toLowerCase()) {
+//         case "red":
+//             return "Stop";
+//         case "yellow":
+//             return "Get Ready";
+//         case "Green":
+//             return "Go";
+//             default:
+//                 return "Invalid Signal";
+
+//     }
+// }
+
+// console.log(trafficSignal("red"));
+
+
+// function monthName(month){
+//     switch(month){
+//              case 1:
+//             return "January";
+//              case 2:
+//             return "feburary";
+//              case 3:
+//             return "March";
+//              case 4:
+//             return "April";
+//              case 5:
+//             return "May";
+//              case 6:
+//             return "June";
+//              case 7:
+//             return "July";
+//              case 8:
+//             return "August";
+//              case 9:
+//             return "September";
+//              case 10:
+//             return "October";
+//              case 11:
+//             return "November";
+//              case 12:
+//             return "December";
+//              default:
+//             return "Invalid Month Number";
+
+//     }
+// }
+
+// console.log(monthName(6));
+
+function checkCharacter(char) {
+    switch (char.toLowerCase()) {
+        case "a":
+        case "e":
+        case "i":
+        case "o":
+        case "u":
+            return "Vowel";
+
+            default:
+                if(char.match(/[a-z]/i)){
+                    return "consonant";
+                } else {
+                    return " not an alphabet";
+                }
     }
-
-    return count;
 }
 
-console.log(countOccurance("programming" , "g"));
+
+console.log(checkCharacter("E"));
