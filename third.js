@@ -2817,23 +2817,221 @@
 
 // console.log(monthName(6));
 
-function checkCharacter(char) {
-    switch (char.toLowerCase()) {
-        case "a":
-        case "e":
-        case "i":
-        case "o":
-        case "u":
-            return "Vowel";
+// function checkCharacter(char) {
+//     switch (char.toLowerCase()) {
+//         case "a":
+//         case "e":
+//         case "i":
+//         case "o":
+//         case "u":
+//             return "Vowel";
 
-            default:
-                if(char.match(/[a-z]/i)){
-                    return "consonant";
-                } else {
-                    return " not an alphabet";
-                }
-    }
+//             default:
+//                 if(char.match(/[a-z]/i)){
+//                     return "consonant";
+//                 } else {
+//                     return " not an alphabet";
+//                 }
+//     }
+// }
+
+
+// console.log(checkCharacter("E"));
+
+// function calculate(num1 , num2 , operator){
+//     switch(operator){
+//         case "+":
+//             return num1 + num2;
+//             case "-":
+//                 return num1 - num2;
+//                 case"*":
+//                 return num1 * num2;
+//                 case "/":
+//                     return num2 !== 0 ? num1/num2 : "cannot divide by zero";
+//                     default:
+//                         return "invalid operator";
+//     }
+// }
+
+// console.log(calculate(5,3,"+"));
+
+
+// function checkGrade(marks){
+//     switch(true){
+//         case (marks >= 90):
+//             return "A";
+//             case (marks >= 75):
+//                 return "B";
+//                 case ( marks >= 50):
+//                     return "C";
+//                     default:
+//                         return "Fail";
+//     }
+// }
+
+// console.log(checkGrade(85));
+
+
+// function browserMessage(browser){
+//     switch(browser.toLowerCase()){
+//         case "chrome":
+//             return "You are Using Google Chrome";
+//             case "Firefox":
+//                 return "you are using MOzilla Firefox";
+//                 case "edge":
+//                     return "you are using Microsoft edge";
+//                     default:
+//                         return "Unknown Browser";
+
+//     }
+// }
+// console.log(browserMessage("chrome"));
+
+
+// function atmMenu(choice){
+//     switch(choice){
+//         case 1:
+//             return "Checking Balance...";
+//             case 2:
+//                 return "Withdrwal Money..";
+//                 case 3:
+//                     return "Deposit MOney..";
+//                     case 4:
+//                         return "Exit..";
+//                         default:
+//                             return "Invalid Option";
+            
+//     }
+// }
+
+// console.log(atmMenu(2));
+
+// function reverseNumber(num){
+//     let reversed = 0;
+//    while ( num > 0){
+       
+//         let digit = num % 10;
+//          reversed = reversed * 10 + digit;
+//           num = Math.floor(num / 10);
+         
+//     }
+
+//     return reversed;
+// }
+
+// console.log(reverseNumber(1234));
+
+// function countCharacter(str, char){
+//     let count = 0;
+
+//     for( let ch of str){
+//         if(ch === char){
+//             count ++;
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(countCharacter("banana" , "a"));
+// console.log(countCharacter("banana" , "a"));
+// console.log(countCharacter("banana" , "a"));
+
+
+// function secondLargest(arr){
+//     let largest = -Infinity;
+//     let second = -Infinity;
+
+//     for ( let num of arr){
+//         if ( num > largest ){
+//             second = largest;
+//             largest = num;
+//         } else if ( num > second && num !== largest){
+//             second = num;
+//         }
+//     }
+//     return {second , largest};
+// }
+
+// let result = secondLargest([10,20,55,23]);
+
+// console.log("Largest : " , result.largest);
+// console.log("Second Largest : " , result.second);
+
+
+// function isAnagrams(str1 , str2){
+//     let s1 = str1.toLowerCase().split("").sort().join("");
+//       let s2 = str2.toLowerCase().split("").sort().join("");
+
+//       return s1 === s2;
+// }
+
+// console.log(isAnagrams("listen", "silent"));
+
+
+// function removeDuplicates(arr){
+//     let result = [];
+
+//     for( let num of arr){
+//         if(!result.includes(num)){
+//             result.push(num);
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(removeDuplicates([1,2,2,2,5,6]));
+
+
+// function longestWord(sentence){
+//     let words = sentence.split(" ");
+//     let longest = "";
+
+//     for( let word of words){
+//         if(word.length > longest.length){
+//             longest = word;
+//         }
+//     }
+
+//     return longest;
+// }
+
+// console.log(longestWord(" i love javascript"));
+
+
+// function charFrquency(str){
+//     let freq = {};
+
+//     for(let ch of str){
+//         if(freq[ch]){
+//             freq[ch]++;
+//         } else {
+//             freq[ch] = 1;
+//         }
+//     }
+
+//     return freq;
+// }
+
+// console.log(charFrquency("hello"));
+
+
+function rotateArray(arr, k) {
+    k = k % arr.length; // handle large k
+
+    return arr.slice(-k).concat(arr.slice(0, arr.length - k));
 }
 
+console.log(rotateArray([1,2,3,4,5], 2));
+// [4,5,1,2,3]
 
-console.log(checkCharacter("E"));
+
+function rotateArray(arr,k){
+    k = k % arr.length;
+
+    return arr.slice(-k).concat(arr.slice(0 , arr.length - k));
+
+    
+}
+
+ console.log(rotateArray([1,2,3,4,5] , 3));
