@@ -3016,22 +3016,119 @@
 // console.log(charFrquency("hello"));
 
 
-function rotateArray(arr, k) {
-    k = k % arr.length; // handle large k
+// function rotateArray(arr, k) {
+//     k = k % arr.length; // handle large k
 
-    return arr.slice(-k).concat(arr.slice(0, arr.length - k));
-}
+//     return arr.slice(-k).concat(arr.slice(0, arr.length - k));
+// }
 
-console.log(rotateArray([1,2,3,4,5], 2));
-// [4,5,1,2,3]
+// console.log(rotateArray([1,2,3,4,5], 2));
+// // [4,5,1,2,3]
 
 
-function rotateArray(arr,k){
-    k = k % arr.length;
+// function rotateArray(arr,k){
+//     k = k % arr.length;
 
-    return arr.slice(-k).concat(arr.slice(0 , arr.length - k));
+//     return arr.slice(-k).concat(arr.slice(0 , arr.length - k));
 
     
+// }
+
+//  console.log(rotateArray([1,2,3,4,5] , 3));
+
+
+// function reverseNumber(num){
+//     let rev = 0;
+
+//     for( ; num > 0; num = Math.floor(num / 10)){
+//         let digit = num % 10;
+//         rev = rev * 10 + digit;
+//     }
+
+//     return rev;
+// }
+
+// console.log(reverseNumber(123));
+
+// function rotateArray( arr , k){
+//     let n = arr.length;
+//     k = k % n;
+
+//     let result = [];
+
+//     for(let i = n - k; i < n; i++){
+//         result.push(arr[i]);
+//     }
+
+//     for( let i = 0; i < n - k; i++){
+//         result.push(arr[i]);
+//     }
+
+//     return result;
+// }
+
+// console.log(rotateArray([1,2,3,4,5,6,7] , 2));
+
+
+// function isAnagram(str1 , str2){
+//     if(str1.length !== str2.length){
+//         return false;
+//     }
+
+//     let freq = {};
+
+//     for(let ch of str1.toLowerCase()){
+//         freq[ch] = (freq[ch] || 0) + 1;
+//     }
+
+//     for( let ch of str2.toLowerCase()) {
+
+//         if(!freq[ch]){
+//             return false;
+//         }
+//         freq[ch]--;
+//     }
+//     return true;
+// }
+
+// console.log(isAnagram("listen" , "silent"));
+// console.log(isAnagram("hello" , "world"));
+
+function reverseString(str){
+    let rev = "";
+
+    for( let i = str.length - 1; i >= 0; i--){
+        rev += str[i];
+    }
+
+    return rev;
 }
 
- console.log(rotateArray([1,2,3,4,5] , 3));
+console.log(reverseString("hello"));
+
+function sumOfDigits(num){
+    let sum = 0;
+    for(; num > 0; num = Math.floor(num / 10)){
+        sum += num % 10;
+    }
+    return sum;
+}
+
+console.log(sumOfDigits(1234));
+
+function countEvenOdd (arr){
+    let even = 0;
+    let odd = 0;
+
+    for( let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            even++;
+        } else {
+            odd++;
+        }
+    }
+
+    return { even , odd};
+}
+
+console.log(countEvenOdd([1,2,3,4,5,6]));
