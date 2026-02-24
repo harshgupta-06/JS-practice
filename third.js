@@ -3094,41 +3094,133 @@
 // console.log(isAnagram("listen" , "silent"));
 // console.log(isAnagram("hello" , "world"));
 
-function reverseString(str){
-    let rev = "";
+// function reverseString(str){
+//     let rev = "";
 
-    for( let i = str.length - 1; i >= 0; i--){
-        rev += str[i];
-    }
+//     for( let i = str.length - 1; i >= 0; i--){
+//         rev += str[i];
+//     }
 
-    return rev;
-}
+//     return rev;
+// }
 
-console.log(reverseString("hello"));
+// console.log(reverseString("hello"));
 
-function sumOfDigits(num){
+// function sumOfDigits(num){
+//     let sum = 0;
+//     for(; num > 0; num = Math.floor(num / 10)){
+//         sum += num % 10;
+//     }
+//     return sum;
+// }
+
+// console.log(sumOfDigits(1234));
+
+// function countEvenOdd (arr){
+//     let even = 0;
+//     let odd = 0;
+
+//     for( let i = 0; i < arr.length; i++){
+//         if(arr[i] % 2 === 0){
+//             even++;
+//         } else {
+//             odd++;
+//         }
+//     }
+
+//     return { even , odd};
+// }
+
+// console.log(countEvenOdd([1,2,3,4,5,6]));
+
+
+// function countFrequency(str){
+//     let freq = {};
+
+//     for( let ch of str ){
+//         if(freq[ch]){
+//             freq[ch]++
+//         } else {
+//             freq[ch] = 1
+//         }
+//     }
+
+//     return freq;
+// }
+
+// console.log(countFrequency("hello"));
+
+// find Missing number
+
+//  function findMissing(arr){
+//     let n = arr.length + 1;
+//     let total = ( n * (n + 1)) / 2;
+
+//     let sum = 0;
+//     for( let num of arr){
+//         sum += num;
+//     }
+
+//     return total - sum;
+// }
+
+// console.log(findMissing([1,2,4,5]));
+
+
+
+// function findMissing(arr){
+//     let n = arr.length + 1;
+//     let total = ( n * (n + 1)) / 2;
+
+//     let sum = 0;
+//     for( let num of arr){
+//         sum += num;
+//     }
+
+//     return total - sum;
+// }
+
+// console.log(findMissing([1,2,3,4,5]));
+
+
+// Move all zeros to end
+
+// function moveZero(arr) { 
+//     let result = [];
+//     let zeros = 0;
+
+
+//     for( let num of arr){
+//         if( num === 0){
+//             zeros++;
+//         } else {
+//             result.push(num);
+//         }
+//     }
+
+//     while ( zeros > 0){
+//         result.push(0);
+//         zeros--;
+//     }
+
+//     return result;
+// }
+
+// console.log(moveZero([0,1,0,3,12]));
+
+
+// Armsstrong number
+
+function isArmstrong(num) { 
+    let str = num.toString();
+    let power = str.length;
     let sum = 0;
-    for(; num > 0; num = Math.floor(num / 10)){
-        sum += num % 10;
-    }
-    return sum;
-}
 
-console.log(sumOfDigits(1234));
-
-function countEvenOdd (arr){
-    let even = 0;
-    let odd = 0;
-
-    for( let i = 0; i < arr.length; i++){
-        if(arr[i] % 2 === 0){
-            even++;
-        } else {
-            odd++;
-        }
+    for( let digit of str){
+        sum += Math.pow(Number (digit) , power);
     }
 
-    return { even , odd};
+    return sum === num;
 }
 
-console.log(countEvenOdd([1,2,3,4,5,6]));
+console.log(isArmstrong(153));
